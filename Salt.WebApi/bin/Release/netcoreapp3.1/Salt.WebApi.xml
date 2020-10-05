@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Salt.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Salt.WebApi.Controllers.TransactionController.GetMerchantTransactionsByDate(System.String,System.DateTime)">
+            <summary>
+            Retrieves a list of transactions by a specific date
+            </summary>
+            <remarks>Returns a list of transaction by specific date and specific merchant</remarks>
+            <response code="200">List retrieved</response>
+            <response code="404">No transactions found</response>
+        </member>
+        <member name="M:Salt.WebApi.Controllers.TransactionController.GetMerchantPaymentByDate(System.String,System.DateTime)">
+            <summary>
+            Retrieves a payment for a specific date
+            </summary>
+            <remarks>Returns a payment object by specific date and specific merchant</remarks>
+            <response code="200">Payment object retrieved</response>
+            <response code="404">No transactions found</response>
+        </member>
+        <member name="M:Salt.WebApi.Controllers.TransactionController.MerchantVoidTransactionsById(System.String,System.Guid)">
+            <summary>
+            Voides a transaction by id
+            </summary>
+            <remarks>Returns the transsaction that merchant voided</remarks>
+            <response code="200">Transaction successfully voided</response>
+            <response code="404">No transactions found</response>
+        </member>
+    </members>
+</doc>
